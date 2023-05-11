@@ -14,7 +14,7 @@ Seguindo com o que o professor pediu a seguir está a minha resolução, só que
 * Assim como no exercício anterior [exerc_POO](https://github.com/Moreira-89/exer_POO) desenvolvi o sistema utilizando a linguagem Python;
 * Criei as classes em arquivos separados para ficar mais organizado.
 
-__Programa Principal (codigo_aqui/prog_principal.py)__
+__Programa Principal (exerc_POO2/codigo_aqui/prog_principal.py)__
 ```
 from datetime import date
 from quarto import Quarto
@@ -51,7 +51,7 @@ for quarto in reserva1.quartos_reservados:
         print("- CPF:", hospede.cpf)
     print("---------------")
 ```
-__Classe Quarto (codigo_aqui/quarto.py)__
+__Classe Quarto (exerc_POO2/codigo_aqui/quarto.py)__
 ```
 class Quarto:
     def __init__(self, capacidade, camas_solteiro, camas_casal, camas_queen, camas_king, frigobar, sacada, banheiro_privativo, tv, preco_diaria):
@@ -74,7 +74,7 @@ class Quarto:
     def remover_hospede_reservado(self, hospede):
         self.hospedes_reservados.remove(hospede)
 ```
-__Classe Reserva (codigo_aqui/reserva.py)__
+__Classe Reserva (exerc_POO2/codigo_aqui/reserva.py)__
 ```
 class Reserva:
     def __init__(self, data_entrada, data_saida):
@@ -89,7 +89,7 @@ class Reserva:
     def remover_quarto_reservado(self, quarto):
         self.quartos_reservados.remove(quarto)
 ```
-__Classe Hospede (codigo_aqui/hospede.py)__
+__Classe Hospede (exerc_POO2/codigo_aqui/hospede.py)__
 ```
 class Hospede:
     def __init__(self, nome, data_nascimento, cpf):
